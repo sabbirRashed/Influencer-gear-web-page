@@ -1,0 +1,111 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* common style */
+.btn-primary {
+    width: 196px;
+    height: 44px;
+    font-weight: 700;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.max-width {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.dark-1 {
+    color: #3A3A3A;
+}
+
+.dark-2 {
+    color: rgba(24, 25, 31, 1);
+}
+
+.dark-3 {
+    color: rgba(120, 120, 133, 1);
+}
+
+
+/* navbar style */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 95px;
+    margin-bottom: 50px;
+}
+
+.influencer {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-lists {}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 34px;
+
+}
+
+/* banner related style */
+.banner{
+    justify-content: space-between;
+    gap: 130px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+/* banner content style */
+.banner-content{
+   max-width: 582px;
+}
+
+.banner-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.banner-description {
+    max-width: 505px;
+    font-weight: 600;
+    margin: 16px 0px;
+}
+
+.banner-btn {
+    border-radius: 41px;
+}
+
+/* banner image style */
+.image-container{
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-camera{
+    width: 100%;
+    display: block;
+}
