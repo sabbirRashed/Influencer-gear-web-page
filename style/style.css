@@ -72,7 +72,6 @@
 /* banner related style */
 .banner {
     justify-content: space-between;
-    gap: 130px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -159,6 +158,7 @@
 
 .price {
     font-siz: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .card {
@@ -196,13 +196,88 @@
     margin-top: 50px;
 }
 
+/* product feature style */
+.product-features{
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.products{
+    display: block;
+    width: 100%;
+}
+
+.feature-content{
+    max-width: 610px;
+
+}
+
+.feature-content-title{
+    font-size: 2.375rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+}
+
+.feature-content-description{
+    max-width: 500px;
+    font-weight: 700;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+
+}
+
+.feature-btn{
+    width: 155px;
+    height: 40px;
+
+}
+
+/* footer style */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0A0826;
+}
+
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 50px;
+
+}
+
+.copyright-notish{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #D9DBE1;
+    line-height: 24px;
+
+}
+
+.footer-icons{
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.icon{
+    color: white;
+    margin-bottom: 50px;
+}
 
 
 /* Query for mobile devices */
 @media screen and (max-width:768px) {
 
     /* nav section */
-    .navbar {
+    .navbar{
         flex-direction: column;
     }
 
@@ -220,6 +295,25 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
     }
+
+    /* banner section */
+     .banner {
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+
+    .banner-content {
+        text-align: center;
+    }
+
+   
+    .banner-title {
+        font-size: 1.75rem;
+        line-height: 40px;
+    }
+
 
     /* logo section */
     .logo-container {
@@ -243,34 +337,33 @@
         grid-template-columns: 1fr;
     }
 
-
-
-    .banner {
-        gap: 40px;
-        margin-top: 40px;
-    }
-
-    .banner-content {
+    /* product features section */
+    .product-features{
+        flex-direction: column-reverse;
+        margin:50px 20px ;
         text-align: center;
     }
 
-   
-    .banner-title {
-        font-size: 1.75rem;
-        line-height: 40px;
+    .feature-content-description{
+        margin:40px auto ;
+        text-align: center;
+
+
     }
 
-    .banner {
-        flex-direction: column-reverse;
+    .feature-btn{
+        margin-bottom: 30px;
     }
 
-   
+    
+
+
 
 }
 
 
 /* medium devices */
-@media screen and (min-width:768px) and (max-width:1140px) {
+/* @media screen and (min-width:768px) and (max-width:1140px) {
 
     .navbar,
     .banner {
@@ -288,4 +381,4 @@
         padding-left: 0;
         padding-right: 0;
     }
-}
+} */
