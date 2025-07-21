@@ -47,7 +47,7 @@
 .navbar {
     justify-content: space-between;
     align-items: center;
-    margin-top: 95px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
@@ -70,7 +70,7 @@
 }
 
 /* banner related style */
-.banner{
+.banner {
     justify-content: space-between;
     gap: 130px;
     margin-top: 80px;
@@ -78,8 +78,8 @@
 }
 
 /* banner content style */
-.banner-content{
-   max-width: 582px;
+.banner-content {
+    max-width: 582px;
 }
 
 .banner-title {
@@ -99,20 +99,21 @@
 }
 
 /* banner image style */
-.image-container{
+.image-container {
     background-image: url(../images/Circle\ design.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.banner-camera{
+
+.banner-camera {
     width: 100%;
     display: block;
 }
 
 /* main section start */
 /* logo section style */
-.logo-container{
+.logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,65 +125,167 @@
 
 }
 
-@media screen and (max-width:768px){
-    .navbar,
-    .banner{
-        margin: 35px 20px;
-    }
+.logo-box>img {
+    width: 100%;
+}
 
-    .banner{
-        gap: 40px;
-        margin-top: 40px;
-    }
 
-    .banner-content{
-        text-align: center;
-    }
+/* popular collection  */
+.popular-collection {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
-    .influencer{
-        font-size: 1rem;
-    }
+.collection-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
 
-    .banner-title{
-        font-size: 1.75rem;
-        line-height: 40px;
-    }
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
-    .navbar,
-    .banner
-    {
+/* card style */
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-siz: 1.5rem;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+.card>img {
+    width: 100%;
+}
+
+.icon-box {
+
+    justify-self: flex-start;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.popular-collection-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popular-collection-btn>button {
+    font-weight: 800;
+    color: #E02C6D;
+    border: none;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+
+
+/* Query for mobile devices */
+@media screen and (max-width:768px) {
+
+    /* nav section */
+    .navbar {
         flex-direction: column;
     }
 
-    .banner{
-        flex-direction: column-reverse;
+    .navbar,
+    .banner {
+        margin: 35px 20px;
     }
 
-    .nav-lists{
+      .influencer {
+        font-size: 1rem;
+    }
+
+     .nav-lists {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
     }
 
+    /* logo section */
+    .logo-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px 20px;
+        border: none;
+        margin:50px 20px;
+    }
+
+    /* popular collection section */
+    .popular-collection {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .banner {
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+   
+    .banner-title {
+        font-size: 1.75rem;
+        line-height: 40px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+   
+
 }
 
 
 /* medium devices */
-@media screen and (min-width:576px) and (max-width:1140px){
-    .navbar,
-    .banner
-    {
-        max-width: 900px;
-       margin: 20px auto;
-    }
+@media screen and (min-width:768px) and (max-width:1140px) {
 
-    main{
+    .navbar,
+    .banner {
         max-width: 900px;
         margin: 20px auto;
     }
-    .logo-container{
+
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+    }
+
+    .logo-container {
         box-sizing: border-box;
-        padding-left:0 ;
-        padding-right:0 ;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
